@@ -1,6 +1,6 @@
 const vscode = require('vscode');
 async function activate(context) {
-  let changelogSnippets = vscode.languages.registerCompletionItemProvider(['markdown', 'plaintext'], {
+  let changelogSnippets = vscode.languages.registerCompletionItemProvider(['markdown'], {
 
     provideCompletionItems(document, position, token, context) {
 
