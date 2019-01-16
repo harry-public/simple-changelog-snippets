@@ -17,7 +17,7 @@ _**Each snippet also adds current date**_ (format of DateTime can be modified th
 
 _**Screenshot**_
 
-![screenshot1](https://raw.githubusercontent.com/harry-public/simple-changelog-snippets/master/images/screenshot1..gif)
+![screenshot1](https://raw.githubusercontent.com/harry-public/simple-changelog-snippets/master/images/screenshot1.gif)
 
 ## Extension Settings
 
