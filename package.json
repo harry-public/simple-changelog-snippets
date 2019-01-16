@@ -1,0 +1,48 @@
+{
+  "name": "simple-changelog-snippets",
+  "displayName": "Simple changelog Snippets",
+  "description": "It provides snippets which could be helpful in making of Changlelogs.",
+  "version": "0.0.1",
+  "engines": { "vscode": "^1.30.0" },
+  "publisher": "harry-public",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harry-public/simple-changelog-snippets.git"
+  },
+  "icon": "images/logo.png",
+  "galleryBanner": {
+    "color": "#fdf6e3"
+  },
+  "categories": [
+    "Snippets",
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "Simple changelog snippets configuration",
+      "properties": {
+        "simpleChangelogSnippets.dateFormat": {
+          "type": "string",
+          "default": "${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+          "description": "Changelog Snippets: Set date format"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^3.1.4",
+    "vscode": "^1.1.25",
+    "eslint": "^4.11.0",
+    "@types/node": "^8.10.25",
+    "@types/mocha": "^2.2.42"
+  }
+}
